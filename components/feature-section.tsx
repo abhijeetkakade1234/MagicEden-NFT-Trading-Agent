@@ -6,18 +6,22 @@ export default function FeatureSection() {
       title: "Gasless Transactions",
       blurb: "Backed by @0xGasless. The agent handles the gas completely for you.",
       icon: "bolt",
+      live: false,
+      comingSoon: false,
     },
     {
       title: "Real-Time Marketplace Monitoring",
       blurb: "Constantly polls across collections to get the best price for you.",
       icon: "radar",
       live: true,
+      comingSoon: false,
     },
     {
       title: "Trait-Based Bidding Logic (Coming Soon)",
       blurb:
         "Advanced filters let you define trait-specific targets (e.g., Laser Eyes, Gold Fur). The agent only bids when those exact NFTs are listed.",
       icon: "target",
+      live: false,
       comingSoon: true,
     },
   ] as const
