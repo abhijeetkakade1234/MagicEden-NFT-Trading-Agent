@@ -28,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`antialiased ${pressStart.variable} ${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
-        <Suspense fallback={null}>{children}</Suspense>
+        <Suspense fallback={null}>
+          {children}
+          <Analytics />
+        </Suspense>
       </body>
-      <Analytics />
     </html>
   )
 }
